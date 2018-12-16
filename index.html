@@ -14,33 +14,25 @@
   <div class="container">
     <h1 class="jumbotron">Got some Pig-Dice game for you!</h1>
     <div class="form-group">
-      <form id="player1" <label for="player1">Enter Player1 Name</label>
-        <input type="text" name="form-control" <br>
-      </form>
-      <form id="player2" <label for="Player2">Enter Player2 name</label>
-        <input type="text" name="form-control" <br>
+      <br>
+    <form id="pig-dice>
+      <div class="col-md-6">
+              <h2>Player 1</h2>
+              <h4>Current Score: <span class="current-score-1"></span></h4>
+              <h4>Total Score: <span class="total-score-1"></span></h4>
+              <button id="roll-btn-1" type="button" name="button">Roll</button>
+              <button id="hold-btn-1" type="button" name="button">Hold</button>
+            </div>
+            <br>
+            <div class="col-md-6">
+                    <h2>Player 2</h2>
+                    <h4>Current Score: <span class="current-score-2"></span></h4>
+                    <h4>Total Score: <span class="total-score-2"></span></h4>
+                    <button id="roll-btn-2" type="button" name="button">Roll</button>
+                    <button id="hold-btn-2" type="button" name="button">Hold</button>
+                  </div>
 
-      </form>
-
-      <button id="start" btn-success btn">Play</button>
-    </div>
-    <h2>Roll</h2>
-    <p><span class="Display" id="currentScore">0</span></p>
-    <h2>CurrentRoll</h2>
-    <p><span class=Display id="currentRoll">0</span></p>
-    <br>
-    <h3>Player1:<span class="player1Output" ,?span>Your score is:</h3>
-    <p><span class="gameStatus" id="totalPlayer1">0</span></p>
-    <div class="button">
-      <button type="submit" class="roll" class="btn btn-sucess">ROLL</button>
-      <button type="submit" class="hold" class="btn btn-success">HOLD</button>
-    </div>
-    <br>
-    <h3>Player2:<span class="player2Output"></span>Your score is:</h3>
-    <p><span class="gameStatus" id="totalPlayer2">0</span></p>
-    <div class="button">
-      <button type="submit" class="roll" class="btn btn-sucess">ROLL</button>
-      <button type="submit" class="hold" class="btn btn-success">HOLD</button>
+    </form>
     </div>
   </div>
 </body>
