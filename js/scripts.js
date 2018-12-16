@@ -1,4 +1,3 @@
-// Business Logic
 function Player() {
   this.runningTotal = 0;
   this.totalScore = 0;
@@ -39,7 +38,6 @@ var player2 = new Player();
 
   });
 
-  // Hold 1
   $("button#hold-btn-1").click(function(event) {
     event.preventDefault();
     player1.holdScore();
@@ -48,7 +46,6 @@ var player2 = new Player();
     $(".current-score-1").text(player1.runningTotal);
   });
 
-  // Hold 2
   $("button#hold-btn-2").click(function(event) {
     event.preventDefault();
     player2.holdScore();
