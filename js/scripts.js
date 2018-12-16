@@ -1,3 +1,4 @@
+// Business Logic
 function Player() {
   this.runningTotal = 0;
   this.totalScore = 0;
@@ -23,8 +24,8 @@ function randomNum() {
 
 $(document).ready(function() {
 
-var player1 = new Player();
-var player2 = new Player();
+  var player1 = new Player();
+  var player2 = new Player();
 
   $("button#roll-btn-1").click(function() {
     player1.rollDice();
@@ -37,7 +38,7 @@ var player2 = new Player();
     $(".current-score-2").text(player2.runningTotal);
 
   });
-
+  // Hold Button for player1
   $("button#hold-btn-1").click(function(event) {
     event.preventDefault();
     player1.holdScore();
@@ -45,7 +46,7 @@ var player2 = new Player();
     player1.runningTotal = 0;
     $(".current-score-1").text(player1.runningTotal);
   });
-
+  // Hold Button for player2
   $("button#hold-btn-2").click(function(event) {
     event.preventDefault();
     player2.holdScore();
