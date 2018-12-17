@@ -1,5 +1,19 @@
 body {
   background-image: url(https://cdn.shopify.com/s/files/1/0933/1330/products/Pig_Dice_1024x1024.JPG?v=1438377592);
   background-size: 40%, 40%;
-  background-color: lightblue;
+
+}
+.container {
+  background-color: lightpink;
+  width: 80%
+  height=auto;margin-left: auto;
+  margin-right: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.jumbotron {
+  float: left;
+  color: pink;
+  padding-bottom: 25px;
+  
 }
