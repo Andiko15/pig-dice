@@ -1,13 +1,10 @@
-// Business Logic
 function Player() {
   this.runningTotal = 0;
   this.totalScore = 0;
 }
-
 Player.prototype.holdScore = function() {
   this.totalScore += this.runningTotal;
 }
-
 Player.prototype.rollDice = function() {
   var random = randomNum();
   if (random > 1) {
@@ -21,24 +18,20 @@ Player.prototype.rollDice = function() {
 function randomNum() {
   return Math.floor(Math.random() * 6 + 1)
 }
-
 $(document).ready(function() {
-
   var player1 = new Player();
   var player2 = new Player();
 
   $("button#roll-btn-1").click(function() {
     player1.rollDice();
     $(".current-score-1").text(player1.runningTotal);
-
   });
 
   $("button#roll-btn-2").click(function() {
     player2.rollDice();
     $(".current-score-2").text(player2.runningTotal);
-
   });
-  // Hold Button for player1
+
   $("button#hold-btn-1").click(function(event) {
     event.preventDefault();
     player1.holdScore();
@@ -46,7 +39,7 @@ $(document).ready(function() {
     player1.runningTotal = 0;
     $(".current-score-1").text(player1.runningTotal);
   });
-  // Hold Button for player2
+
   $("button#hold-btn-2").click(function(event) {
     event.preventDefault();
     player2.holdScore();
