@@ -18,4 +18,7 @@ body {
   padding-top: 25px;
   margin-top: 10px;
   margin-bottom: 20px;
+  border: 35px solid lightblue;
+  margin-left: 1px;
+  margin-right: 1px;
 }
