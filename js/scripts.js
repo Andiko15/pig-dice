@@ -4,6 +4,7 @@ function Player() {
 }
 Player.prototype.holdScore = function() {
   this.totalScore += this.runningTotal;
+  alert("pass it to the next player")
 }
 Player.prototype.rollDice = function() {
   var random = randomNum();
