@@ -27,3 +27,7 @@ body {
 ul {
   font-size: 25px;
 }
+#restart {
+  background-color: lightpink;
+  font-size: 25px;
+}
